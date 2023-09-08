@@ -1,0 +1,30 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 135px;
+    text-align: center;
+    margin: 150px 0 0 0;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.underheading{
+    text-align: center;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.underheading-wrapper{
+    text-align: center;
+}
+
+.text-color{
+    color: #fff;
+}
+
+.side-drawer{
+    background-color: #292828;
+    color: #fff;
+}
