@@ -13,6 +13,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
+import pdf from "../res/Resume_NitinDhiman.pdf";
 
 const drawerWidth = 240;
 const navItems = ['// home', '// expertise', '// work', '// education', '// contact'];
@@ -51,8 +52,8 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex', height: "100px"}} >
       <CssBaseline />
-      <AppBar component="nav" style={{background: "transparent"}}>
-        <Toolbar style={{margin: "20px 0"}}>
+      <AppBar component="nav" style={{background: "transparent"}} elevation={0}>
+        <Toolbar style={{margin: "20px 0", boxShadow: "0 0px"}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -69,14 +70,21 @@ function DrawerAppBar(props) {
           >
             NitinDhiman
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, transform: "translate(-50%)" }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#fff', mx: "15px" }}>
                 {item}
               </Button>
             ))}
           </Box>
-          <Button variant='outlined' color='secondary' sx={{ display: { xs: 'none', sm: 'block' } }}>Resume</Button>
+          <Button 
+            href={pdf} 
+            target='_blank' 
+            rel='noreferrer' 
+            variant='contained' 
+            color='secondary' 
+            sx={{ display: { xs: 'none', sm: 'block' } }}
+          >Resume</Button>
         </Toolbar>
       </AppBar>
       <nav>

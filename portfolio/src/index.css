@@ -1,3 +1,7 @@
+/* *{
+    cursor: none;
+} */
+
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 135px;
@@ -5,6 +9,7 @@ h1{
     margin: 150px 0 0 0;
     font-weight: 300;
     letter-spacing: 4px;
+    z-index: 2;
 }
 
 .underheading{
@@ -27,4 +32,39 @@ h1{
 .side-drawer{
     background-color: #292828;
     color: #fff;
+}
+
+.main-container{
+    position: relative;
+}
+
+.main-container::after{
+    content: "";
+    background: linear-gradient(180deg, #00000012 70%, #181818 100%) ,url("../resources/head-container.jpg") no-repeat center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    z-index: -1;
+    opacity: 65;
+}
+
+.scroll-animation{
+    position: relative;
+    height: 100px;
+    top: 100px;
+}
+
+.cursor{
+    background: linear-gradient(to top left, #55005d, #9101cf);
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
 }

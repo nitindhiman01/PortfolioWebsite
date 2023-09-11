@@ -2,12 +2,16 @@ import React from 'react';
 import './index.css';
 import DrawerAppBar from './Components/navbar';
 import HomePortfolio from './Components/homePortfolio';
+import AnimatedCursor from './Components/animatedCursor';
 
 function App() {
   return(
     <div>
-      <DrawerAppBar />
-      <HomePortfolio />
+      <AnimatedCursor />
+      <div className='main-container'>
+        <DrawerAppBar />
+        <HomePortfolio />
+      </div>
     </div>
   );
 }
