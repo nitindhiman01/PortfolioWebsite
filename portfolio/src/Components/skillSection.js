@@ -1,13 +1,12 @@
 import React from 'react';
 import SkillCard from './skillCard';
-import { motion } from 'framer-motion';
 
 
 function SkillSection(){
     return(
         <div className='skill-section'>
             <div className='sub-headings'>
-                <motion.h2>My Prowess</motion.h2>
+                <h2>My Prowess</h2>
             </div>
             <div className='skill-card-wrapper'>
                 <SkillCard
@@ -30,6 +29,7 @@ function SkillSection(){
                     contentLine1="Skilled in making fully functional Secure web applications using NodeJS, ExpressJS, EJS, MongoDB, APIs."
                 />
             </div>
+            
         </div>
     );
 }
