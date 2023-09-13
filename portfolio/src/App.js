@@ -3,6 +3,7 @@ import './index.css';
 import DrawerAppBar from './Components/navbar';
 import HomePortfolio from './Components/homePortfolio';
 import AnimatedCursor from './Components/animatedCursor';
+import SkillSection from './Components/skillSection';
 
 function App() {
   return(
@@ -11,6 +12,9 @@ function App() {
       <div className='main-container'>
         <DrawerAppBar />
         <HomePortfolio />
+      </div>
+      <div>
+        <SkillSection />
       </div>
     </div>
   );

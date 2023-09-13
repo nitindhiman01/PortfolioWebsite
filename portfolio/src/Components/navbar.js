@@ -16,7 +16,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import pdf from "../res/Resume_NitinDhiman.pdf";
 
 const drawerWidth = 240;
-const navItems = ['// home', '// expertise', '// work', '// education', '// contact'];
+const navItems = ['home', 'skills', 'work', 'education', 'contact'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -70,7 +70,7 @@ function DrawerAppBar(props) {
           >
             NitinDhiman
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, transform: "translate(-50%)" }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, transform: "translate(-50%)", position: "absolute", left: "50%" }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff', mx: "15px" }}>
                 {item}
@@ -83,7 +83,7 @@ function DrawerAppBar(props) {
             rel='noreferrer' 
             variant='contained' 
             color='secondary' 
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: "30px" }}
           >Resume</Button>
         </Toolbar>
       </AppBar>

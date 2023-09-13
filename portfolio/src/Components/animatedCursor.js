@@ -6,7 +6,6 @@ function AnimatedCursor(){
         x: 0,
         y: 0
     });
-    // const [cursorVariant, setCursorVariant] = useState("default");
 
     useEffect(() => {
         const pointerMove = e => {
@@ -33,9 +32,6 @@ function AnimatedCursor(){
             width: 150
         }
     }
-
-    // const textAnimate = () => setCursorVariant("textHover");
-    // const textNormal = () => setCursorVariant("default");
 
     return(
         <motion.div
