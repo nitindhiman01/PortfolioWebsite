@@ -4,6 +4,8 @@ import DrawerAppBar from './Components/navbar';
 import HomePortfolio from './Components/homePortfolio';
 import AnimatedCursor from './Components/animatedCursor';
 import SkillSection from './Components/skillSection';
+import EduSection from './Components/eduSection';
+import Footer from './Components/footer';
 
 function App() {
   return(
@@ -16,6 +18,11 @@ function App() {
       <div>
         <SkillSection />
       </div>
+      <div>
+        <EduSection />
+      </div>
+
+      <Footer />
     </div>
   );
 }

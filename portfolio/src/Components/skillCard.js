@@ -3,10 +3,17 @@ import Lottie from 'lottie-react';
 import SoftwareAnimation from '../res/animation_c.json';
 import ReactAnimation from '../res/zDsF7xR01l.json';
 import NodeAnimation from '../res/animation_node.json';
+import {motion} from "framer-motion";
+
+
+const variants = {
+    visible : {opacity: 1, y: 0,},
+    hidden : {opacity: 0, y: 30,}
+}
 
 function SkillCard(props){
     return(
-        <div className='skill-card'>
+        <motion.div className='skill-card' initial="hidden" whileInView="visible" variants={variants} transition={{duration: 0.4}} viewport={{once: true, amount: 0.5}}>
             {props.softwareAnimation && <Lottie className='skill-animation' animationData={SoftwareAnimation}></Lottie>}
             {props.frontendAnimation && <Lottie className='skill-animation' animationData={ReactAnimation}></Lottie>}
             {props.backendAnimation && <Lottie className='skill-animation' animationData={NodeAnimation}></Lottie>}
@@ -19,7 +26,7 @@ function SkillCard(props){
                 <p>{props.contentLine1}</p>
                 <p>{props.contentLine2}</p>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
