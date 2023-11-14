@@ -6,6 +6,7 @@ import AnimatedCursor from './Components/animatedCursor';
 import SkillSection from './Components/skillSection';
 import EduSection from './Components/eduSection';
 import Footer from './Components/footer';
+import ExperienceSection from './Components/expSection';
 
 function App() {
   return(
@@ -20,6 +21,9 @@ function App() {
       </div>
       <div>
         <EduSection />
+      </div>
+      <div>
+        <ExperienceSection />
       </div>
 
       <Footer />

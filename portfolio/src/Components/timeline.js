@@ -66,7 +66,29 @@ export default function CustomizedTimeline() {
           <Typography variant="h6" component="span">
             Excellence Technologies / Frontend Training
           </Typography>
-          <Typography>HTML, CSS, JAVASCRIPT, BOOTSTRAP</Typography>
+          <Typography>HTML, CSS, JavaScript, Bootstrap</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className='timelineitem'>
+        <TimelineOppositeContent
+          className='timelinefont'
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+        >
+          2021
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot sx={{color: "#9c27b0", margin: 0, backgroundColor: "transparent", borderColor: "#9c27b0"}}>
+            <LaptopMacIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className='timelinecontentbox' sx={{ py: '12px', px: 2 }}>
+          <Typography variant="h6" component="span">
+            Internshala / Programming with C and C++
+          </Typography>
+          <Typography>C++, Object Oriented Programming</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem className='timelineitem'>
