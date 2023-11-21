@@ -1,32 +1,19 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import DrawerAppBar from './Components/navbar';
-import HomePortfolio from './Components/homePortfolio';
-import AnimatedCursor from './Components/animatedCursor';
-import SkillSection from './Components/skillSection';
-import EduSection from './Components/eduSection';
-import Footer from './Components/footer';
-import ExperienceSection from './Components/expSection';
+import PortfolioHomePage from './Components/mainPortfolio';
+import BlogWebsite from './Components/blogWebsite';
 
 function App() {
   return(
     <div>
-      <AnimatedCursor />
-      <div className='main-container'>
-        <DrawerAppBar />
-        <HomePortfolio />
-      </div>
-      <div>
-        <SkillSection />
-      </div>
-      <div>
-        <EduSection />
-      </div>
-      <div>
-        <ExperienceSection />
-      </div>
-
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<PortfolioHomePage />}></Route>
+          <Route path='/blogwebsite' element={<BlogWebsite />}></Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <PortfolioHomePage /> */}
     </div>
   );
 }
