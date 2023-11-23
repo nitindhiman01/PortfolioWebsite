@@ -302,3 +302,54 @@ h1{
     font-family: 'Roboto Mono';
     color: #858585;
 }
+
+
+/* Project pages */
+
+.project-container {
+    padding: 0 100px;
+}
+
+.project-category{
+    color: #858585;
+}
+
+.project-page-content{
+    padding: 0 65px;
+}
+
+.project-info-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+}
+
+.list-content{
+    padding-left: 18px;
+}
+
+.list-item > h4{
+    margin: 0;
+}
+
+.project-git-btn{
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+.project-git-btn:hover{
+    color: #fff;
+}
+
+.project-img-box{
+    padding-top: 40px;
+}
+
+.project-img-box > img{
+    width: 100%;
+}
