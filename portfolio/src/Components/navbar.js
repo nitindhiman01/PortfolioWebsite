@@ -5,10 +5,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -16,7 +12,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import pdf from "../res/Resume_NitinDhiman.pdf";
 
 const drawerWidth = 240;
-const navItems = ['home', 'skills', 'work', 'education', 'contact'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -27,23 +22,20 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        NitinDhiman
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
+      <Typography variant="h6" sx={{ my: 2, fontFamily: 'Roboto Mono' }}>
+        NitinDhiman;
       </Typography>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "left" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-        <ListItemButton sx={{ textAlign: 'left' }}>
-            <ListItemText primary="Resume" />
-        </ListItemButton>
-      </List>
+      <ul className='drawer-list'>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Work">Work</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href={pdf}>Resume</a></li>
+      </ul>
     </Box>
   );
 
@@ -66,25 +58,25 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily: "Roboto Mono" }}
           >
-            NitinDhiman
+            NitinDhiman<span>;</span>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, transform: "translate(-50%)", position: "absolute", left: "50%" }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', mx: "15px" }}>
-                {item}
-              </Button>
-            ))}
+          <Box className="nav-items" sx={{display: { xs: 'none', sm: 'block' }, transform: "translate(-50%)", position: "absolute", left: "50%" }}>
+            <nav>
+              <ul className='nav-item-list'>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </nav>
           </Box>
-          <Button 
-            href={pdf} 
-            target='_blank' 
-            rel='noreferrer' 
-            variant='contained' 
-            color='secondary' 
-            sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: "30px" }}
-          >Resume</Button>
+          <Box sx={{display: { xs: 'none', sm: 'block' }}}>
+            <a className='resume-button' href={pdf}><span class="text">Resume</span><span>Resume</span></a>
+          </Box>
         </Toolbar>
       </AppBar>
       <nav>

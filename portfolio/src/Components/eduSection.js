@@ -4,7 +4,7 @@ import Subheading from "./Subheading";
 
 function EduSection(){
     return(
-    <div className="edu-section">
+    <div id="Education" className="edu-section">
         <Subheading content="My Education and Certifications" />
         <CustomizedTimeline />
     </div>);

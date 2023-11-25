@@ -1,6 +1,7 @@
 import React from 'react';
 import '../index.css';
 import DrawerAppBar from './navbar';
+// import CustomNavbar from './customNavbar';
 import HomePortfolio from './homePortfolio';
 import AnimatedCursor from './animatedCursor';
 import SkillSection from './skillSection';
@@ -13,7 +14,8 @@ function PortfolioHomePage() {
   return(
     <div>
         <AnimatedCursor />
-        <div className='main-container'>
+        <div id="Home" className='main-container'>
+            {/* <CustomNavbar /> */}
             <DrawerAppBar />
             <HomePortfolio />
         </div>

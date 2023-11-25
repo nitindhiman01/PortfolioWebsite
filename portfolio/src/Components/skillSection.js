@@ -11,7 +11,7 @@ import Subheading from './Subheading';
 
 function SkillSection(){
     return(
-        <div className='skill-section'>
+        <div id="Skills" className='skill-section'>
             <Subheading content="My Prowess" />
             <div className='skill-card-wrapper'>
                 <SkillCard

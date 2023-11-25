@@ -4,7 +4,7 @@ import CopyrightIcon from '@mui/icons-material/Copyright';
 
 function Footer(){
     return(
-        <div className="footer">
+        <div id="Contact" className="footer">
             <hr className="horizontal-line"></hr>
             <h3 className="footerTitle">Available for freelancing.</h3>
             <h5 className="footerContent">Send me an E-mail or get in touch with me via message!</h5>

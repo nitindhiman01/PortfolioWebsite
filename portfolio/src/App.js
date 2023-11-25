@@ -13,7 +13,6 @@ function App() {
           <Route path='/blogwebsite' element={<BlogWebsite />}></Route>
         </Routes>
       </BrowserRouter>
-      {/* <PortfolioHomePage /> */}
     </div>
   );
 }

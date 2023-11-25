@@ -6,7 +6,7 @@ import MediaControlCard from "./expCard";
 
 function ExperienceSection(){
     return(
-        <div className="experience-section">
+        <div id="Experience" className="experience-section">
             <Subheading content="My Experiences" />
             <Box display="grid" gap={2} sx={{justifyContent: "center"}}>
                 <MediaControlCard 

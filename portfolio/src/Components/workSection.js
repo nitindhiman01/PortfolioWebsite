@@ -6,7 +6,7 @@ import WorkData from "../workData";
 
 function WorkSection(){
     return(
-        <div className="work-container">
+        <div id="Work" className="work-container">
             <Subheading content="My Work"/>
             <div>
                 <Grid container spacing={{xs: 2, md: 3}}>
