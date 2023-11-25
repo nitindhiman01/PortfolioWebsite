@@ -1,7 +1,4 @@
 import React from "react";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import DrawerAppBar from "./navbar";
-import Error404 from "../res/error/error404.jpg";
 
 function PageNotFound(){
     return(
