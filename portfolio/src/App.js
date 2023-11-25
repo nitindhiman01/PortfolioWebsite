@@ -1,18 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './index.css';
 import PortfolioHomePage from './Components/mainPortfolio';
 import BlogWebsite from './Components/blogWebsite';
+import PageNotFound from './Components/pageNotFound';
 
 function App() {
   return(
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<PortfolioHomePage />}></Route>
           <Route path='/blogwebsite' element={<BlogWebsite />}></Route>
+          <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

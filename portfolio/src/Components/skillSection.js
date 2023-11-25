@@ -31,7 +31,7 @@ function SkillSection(){
                     backendAnimation={true}
                     heading="Backend Dev"
                     quote='"Make it work, make it right, make it fast.!"'
-                    contentLine1="Skilled in making fully functional Secure web applications using NodeJS, ExpressJS, EJS, MongoDB, APIs."
+                    contentLine1="Skilled in making fully functional Secure web applications using NodeJS, ExpressJS, EJS, MongoDB, MySQL and APIs."
                 />
             </div>
             <img className="app-icons" src={VisualIcon} alt='visual-icon' style={{left: "7%"}}></img>
