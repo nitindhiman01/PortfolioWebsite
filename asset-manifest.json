@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/PortfolioWebsite/static/css/main.ce689a7e.css",
+    "main.js": "/PortfolioWebsite/static/js/main.9c95a06c.js",
+    "static/media/blog-web.png": "/PortfolioWebsite/static/media/blog-web.7f3be7d80044293a11bf.png",
+    "static/media/head-container.jpg": "/PortfolioWebsite/static/media/head-container.cd699bed182575fb016b.jpg",
+    "static/media/Full-web.jpg": "/PortfolioWebsite/static/media/Full-web.343a10c463a635bca89f.jpg",
+    "static/media/post-page.jpg": "/PortfolioWebsite/static/media/post-page.37be210ec443ded38851.jpg",
+    "static/media/Resume_NitinDhiman.pdf": "/PortfolioWebsite/static/media/Resume_NitinDhiman.fbaf4788b32d0fbcbf48.pdf",
+    "static/media/codsoft.png": "/PortfolioWebsite/static/media/codsoft.bd3d4223d6c5797ae18f.png",
+    "static/media/atom.png": "/PortfolioWebsite/static/media/atom.ac9979693620f0a96231.png",
+    "static/media/Register-page.jpg": "/PortfolioWebsite/static/media/Register-page.0be916a3da350342c793.jpg",
+    "static/media/nodejs.png": "/PortfolioWebsite/static/media/nodejs.007e99f68b718e476aba.png",
+    "static/media/login-page.jpg": "/PortfolioWebsite/static/media/login-page.7d1336ec9a313e2f1e8c.jpg",
+    "static/media/visual-studio.png": "/PortfolioWebsite/static/media/visual-studio.ce637e60ea8d930e6547.png",
+    "static/media/css-3.png": "/PortfolioWebsite/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/js.png": "/PortfolioWebsite/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/PortfolioWebsite/index.html",
+    "main.ce689a7e.css.map": "/PortfolioWebsite/static/css/main.ce689a7e.css.map",
+    "main.9c95a06c.js.map": "/PortfolioWebsite/static/js/main.9c95a06c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce689a7e.css",
+    "static/js/main.9c95a06c.js"
+  ]
+}
