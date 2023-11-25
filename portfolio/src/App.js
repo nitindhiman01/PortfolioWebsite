@@ -10,7 +10,7 @@ function App() {
     <div>
       <HashRouter>
         <Routes>
-          <Route index element={<PortfolioHomePage />}></Route>
+          <Route path='/' index element={<PortfolioHomePage />}></Route>
           <Route path='/blogwebsite' element={<BlogWebsite />}></Route>
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
