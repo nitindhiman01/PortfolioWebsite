@@ -8,9 +8,9 @@ import PageNotFound from './Components/pageNotFound';
 function App() {
   return(
     <div>
-      <BrowserRouter basename='/PortfolioWebsite'>
+      <BrowserRouter>
         <Routes>
-          <Route path='/PortfolioWebsite' index element={<PortfolioHomePage />}></Route>
+          <Route path='/' index element={<PortfolioHomePage />}></Route>
           <Route path='/blogwebsite' element={<BlogWebsite />}></Route>
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
