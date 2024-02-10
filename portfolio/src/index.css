@@ -477,8 +477,9 @@ h1{
     }
 
     .sub-headings{
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
+        padding: 0 15px;
     }
 
     .skill-card-wrapper{
@@ -546,6 +547,7 @@ h1{
 
     .skill-card-heading{
         font-size: 23px;
+        text-align: center;
     }
 
     .project-container{
@@ -554,6 +556,10 @@ h1{
 
     .project-page-content{
         padding: 0 30px;
+    }
+
+    .skill-content{
+        padding: 4px 25px;
     }
 }
 

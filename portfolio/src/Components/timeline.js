@@ -98,7 +98,7 @@ export default function CustomizedTimeline() {
           <Typography sx={{fontSize : { sm : '12px', lg : '1rem'}}}>C++, Object Oriented Programming</Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem className='timelineitem' sx={{height : { sm : "210px", lg : "170px"}}}>
+      <TimelineItem className='timelineitem' sx={{height : { sm : "225px", lg : "170px"}}}>
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           align="right"
