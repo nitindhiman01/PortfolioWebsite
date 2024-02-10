@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
-import pdf from "../res/Resume_NitinDhiman.pdf";
+import pdf from "../res/Nitin_Resume.pdf";
 
 const drawerWidth = 240;
 
