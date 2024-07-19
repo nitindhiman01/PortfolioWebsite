@@ -264,6 +264,8 @@ h1{
     color: #9c9c9c;
     font-size: small;
     padding-left: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .work-card-btn:hover{

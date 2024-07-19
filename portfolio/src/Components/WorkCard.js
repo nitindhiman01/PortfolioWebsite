@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 // import BlogWeb from "../res/work/blog-web.png"
 
 export default function WorkCard(props) {
@@ -21,7 +22,7 @@ export default function WorkCard(props) {
       </CardActionArea>
       <CardActions>
         <a className="robotomonoFamily work-card-btn" href={props.projectURL}>
-          Show Project
+          Show Project <OpenInNewIcon sx={{fontSize: "17px", mx: "3px"}} />
         </a>
       </CardActions>
     </Card>

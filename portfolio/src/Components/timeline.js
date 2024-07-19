@@ -118,7 +118,7 @@ export default function CustomizedTimeline() {
             Ch. Devi Lal University / B.tech
           </Typography>
           <Typography sx={{fontSize : { sm : '12px', lg : '1rem'}}}>NAAC accredited Government University</Typography>
-          <Typography sx={{fontSize : { sm : '12px', lg : '1rem'}}}>Computer Science Engineering, CGPA: 8.56</Typography>
+          <Typography sx={{fontSize : { sm : '12px', lg : '1rem'}}}>Computer Science Engineering, CGPA: 8.67</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
