@@ -25,13 +25,13 @@ function SkillSection(){
                     frontendAnimation={true}
                     heading="Frontend Dev"
                     quote='"Better web experiences start with great front end design!"'
-                    contentLine1="Proficient in using HTML, CSS, JavaScript, ReactJS, Bootstrap, Material UI Frameworks and Framer motion animation lib."
+                    contentLine1="Proficient in using HTML, CSS, JavaScript, ReactJS, NextJS, Redux Bootstrap, TailwindCSS, Material UI Frameworks and Framer motion animation lib."
                 />
                 <SkillCard
                     backendAnimation={true}
                     heading="Backend Dev"
                     quote='"Make it work, make it right, make it fast.!"'
-                    contentLine1="Skilled in making fully functional Secure web applications using NodeJS, ExpressJS, EJS, MongoDB, MySQL and APIs."
+                    contentLine1="Skilled in making fully functional Secure web applications & RESTful APIs using NodeJS, ExpressJS, EJS, WebSockets, MongoDB, MySQL."
                 />
             </div>
             <img className="app-icons" src={VisualIcon} alt='visual-icon' style={{left: "7%"}}></img>
